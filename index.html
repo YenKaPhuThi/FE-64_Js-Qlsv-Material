@@ -32,6 +32,18 @@
               <input type="text" class="form-control" id="studentName" />
             </div>
             <div class="form-group">
+              <label for="studentEmail">Email:</label>
+              <input type="text" class="form-control" id="studentEmail" />
+            </div>
+            <div class="form-group">
+              <label for="studentPhone">Số Điện Thoại:</label>
+              <input type="text" class="form-control" id="studentPhone" />
+            </div>
+            <div class="form-group">
+              <label for="studentName">Tên Sinh Viên:</label>
+              <input type="text" class="form-control" id="studentName" />
+            </div>
+            <div class="form-group">
               <label for="studentType">Loại Sinh Viên:</label>
               <select class="custom-select" id="studentType">
                 <option>Khó khăn</option>
@@ -63,21 +75,49 @@
               <input type="text" class="form-control" id="attritudeScore" />
             </div>
             <div class="text-center">
-              <button type="submit" id="btnConfirm" class="btn btn-primary">Xác Nhận</button>
+              <button type="submit" id="btnConfirm" class="btn btn-success">
+                Xác Nhận
+              </button>
             </div>
           </form>
         </div>
         <div lass="col-md-6">
           <h3 class="text-center">Thông Tin Sinh Viên</h3>
           <div>
-            <p>Mã Sinh Viên: <span id="studentCodeTxt" class="text-danger"></span></p>
-            <p>Tên Sinh Viên: <span id="studentNameTxt" class="text-danger"></span></p>
-            <p>Loại Sinh Viên: <span id="studentTypeTxt" class="text-danger"></span></p>
-            <p>Điểm Trung Bình: <span id="studentAverTxt" class="text-danger"></span></p>
-            <p>Xếp Loại: <span id="studentLevelTxt" class="text-danger"></span></p>
+            <p>
+              Mã Sinh Viên:
+              <span id="studentCodeTxt" class="text-danger"></span>
+            </p>
+            <p>
+              Tên Sinh Viên:
+              <span id="studentNameTxt" class="text-danger"></span>
+            </p>
+            <p>
+              Loại Sinh Viên:
+              <span id="studentTypeTxt" class="text-danger"></span>
+            </p>
+            <p>
+              Điểm Trung Bình:
+              <span id="studentAverTxt" class="text-danger"></span>
+            </p>
+            <p>
+              Xếp Loại: <span id="studentLevelTxt" class="text-danger"></span>
+            </p>
           </div>
         </div>
       </div>
+      <table class="studentTable table mt-5">
+        <thead>
+          <tr>
+            <th>Mã sinh viên</th>
+            <th>Tên sinh viên</th>
+            <th>Loại sinh viên</th>
+            <th>Điểm trung bình</th>
+            <th>Xếp loại</th>
+          </tr>
+        </thead>
+        <tbody id="studentTableBody"></tbody>
+      </table>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -99,6 +139,7 @@
 
     <!-- Main JavaScript -->
     <!-- <script src="./js/main.js"></script> -->
+    <script src="./modules/Student.js"></script>
     <script src="./js/main-oop.js"></script>
     <!-- <script src="./js/meterial.js"></script> -->
   </body>
